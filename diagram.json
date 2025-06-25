@@ -1,0 +1,45 @@
+{
+  "version": 1,
+  "author": "Agniva Chandra",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-arduino-uno", "id": "uno", "top": 0.6, "left": -0.6, "attrs": {} },
+    {
+      "type": "wokwi-gas-sensor",
+      "id": "gas1",
+      "top": -148,
+      "left": 166.1,
+      "rotate": 90,
+      "attrs": {}
+    },
+    { "type": "wokwi-dht22", "id": "dht1", "top": -162.9, "left": 292.2, "attrs": {} },
+    { "type": "wokwi-potentiometer", "id": "pot1", "top": -116.5, "left": 9.4, "attrs": {} },
+    { "type": "wokwi-potentiometer", "id": "pot2", "top": -106.9, "left": -115.4, "attrs": {} },
+    {
+      "type": "board-ssd1306",
+      "id": "oled1",
+      "top": 271.94,
+      "left": 134.63,
+      "attrs": { "i2cAddress": "0x3c" }
+    }
+  ],
+  "connections": [
+    [ "gas1:VCC", "uno:5V", "red", [ "v38.4", "h77.7", "v96", "h0", "v134.4", "h-134.4" ] ],
+    [ "dht1:VCC", "uno:5V", "red", [ "v278.4", "h-28.8" ] ],
+    [ "gas1:GND", "uno:GND.1", "black", [ "v19.2", "h39.2", "v-182.4", "h9.6" ] ],
+    [ "dht1:GND", "uno:GND.1", "black", [ "v9.6", "h28.8", "v-163.2", "h-182.4" ] ],
+    [ "dht1:SDA", "uno:2", "green", [ "v76.8", "h-86.3" ] ],
+    [ "gas1:AOUT", "uno:A1", "yellow", [ "v28.8", "h-76.8" ] ],
+    [ "pot1:GND", "uno:GND.1", "black", [ "v38.4", "h76.8" ] ],
+    [ "pot1:VCC", "uno:5V", "red", [ "v9.6", "h37.6", "v-76.8", "h-96", "v326.4", "h153.6" ] ],
+    [ "pot2:VCC", "uno:5V", "red", [ "v172.8", "h56.8", "v86.4", "h163.2" ] ],
+    [ "pot2:GND", "uno:GND.1", "black", [ "v19.2", "h201.6" ] ],
+    [ "pot2:SIG", "uno:A0", "violet", [ "v192", "h230" ] ],
+    [ "pot1:SIG", "uno:A2", "blue", [ "v163.2", "h182" ] ],
+    [ "oled1:GND", "uno:GND.2", "black", [ "v-28.8", "h-9.6" ] ],
+    [ "oled1:VCC", "uno:5V", "red", [ "v-19.2", "h-28.65" ] ],
+    [ "oled1:SDA", "uno:A4", "green", [ "v-67.2", "h48.07" ] ],
+    [ "oled1:SCL", "uno:A5", "green", [ "v-28.8", "h77.1" ] ]
+  ],
+  "dependencies": {}
+}
