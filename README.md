@@ -20,7 +20,7 @@ This project uses sensors like DHT22, MQ2, Rain, and Soil Moisture along with a 
 🪶 Low power, field-deployable prototype
 
 ## 🔌 Circuit Diagram
-🖼️ Add your circuit diagram image as circuit-diagram.png
+
 
 ![image](https://github.com/user-attachments/assets/e64bbbb1-22cf-479b-ae6b-6619faac6619)
 
