@@ -67,6 +67,9 @@ Install these libraries via the **Arduino Library Manager**:
 
 ## 📈 Results
 
+![image](https://github.com/user-attachments/assets/c321aadc-ac1a-4d4f-941d-71602b0fa4da)
+
+
 ![image](https://github.com/user-attachments/assets/b535f3c8-1c39-4bd8-a7a5-02c7a0ebde48)
 
 
